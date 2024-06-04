@@ -50,3 +50,11 @@ Route::post('/products', [App\Http\Controllers\ProductController::class, 'store'
 Route::get('/products/{id}', [App\Http\Controllers\ProductController::class, 'show']);
 Route::put('/products/{id}', [App\Http\Controllers\ProductController::class, 'update']);
 Route::delete('/products/{id}', [App\Http\Controllers\ProductController::class, 'destroy']);
+
+
+// customers route
+Route::get('/customers', [App\Http\Controllers\CustomerController::class, 'index']);
+Route::post('/customers', [App\Http\Controllers\CustomerController::class, 'store']);
+Route::get('/customers/{id}', [App\Http\Controllers\CustomerController::class, 'show']);
+Route::put('/customers/{id}', [App\Http\Controllers\CustomerController::class, 'update']);
+Route::delete('/customers/{id}', [App\Http\Controllers\CustomerController::class, 'destroy']);
