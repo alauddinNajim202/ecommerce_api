@@ -58,3 +58,11 @@ Route::post('/customers', [App\Http\Controllers\CustomerController::class, 'stor
 Route::get('/customers/{id}', [App\Http\Controllers\CustomerController::class, 'show']);
 Route::put('/customers/{id}', [App\Http\Controllers\CustomerController::class, 'update']);
 Route::delete('/customers/{id}', [App\Http\Controllers\CustomerController::class, 'destroy']);
+
+
+// orders route
+Route::get('/orders', [App\Http\Controllers\OrderController::class, 'index']);
+Route::post('/orders', [App\Http\Controllers\OrderController::class, 'store']);
+Route::get('/orders/{id}', [App\Http\Controllers\OrderController::class, 'show']);
+Route::put('/orders/{id}', [App\Http\Controllers\OrderController::class, 'update']);
+Route::delete('/orders/{id}', [App\Http\Controllers\OrderController::class, 'destroy']);
